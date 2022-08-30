@@ -22,6 +22,16 @@ void desenha(void)
 	//Configura a cor
     //glColor3f (1.0, 1.0, 1.0); // RGB
 
+    glBegin(GL_QUADS);
+        glColor3ub(100, 150, 255);//rand()%255, rand()%255, rand()%255);
+        glVertex2i(0, 600);
+        glVertex2i(600, 600);
+        glColor3ub(255, 255, 255);
+        glVertex2i(600, 0);
+        glVertex2i(0, 0);
+
+    glEnd();
+
     // Desenha um quadrado preenchido com a cor corrente
     glBegin(GL_QUADS);
         glColor3ub(255, 255, 0);//rand()%255, rand()%255, rand()%255);
@@ -80,8 +90,7 @@ void desenha(void)
                 glColor3ub(rand()%255, 255, rand()%255);//rand()%255, rand()%255, rand()%255);
                 glVertex2i(x, y);
         }
-        glEnd();
-
+    glEnd();
 
 	//Habilita a execução de comandos OpenGL
 	glFlush();
