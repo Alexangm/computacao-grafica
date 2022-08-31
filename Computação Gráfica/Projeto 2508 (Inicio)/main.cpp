@@ -29,7 +29,6 @@ void desenha(void)
         glColor3ub(255, 255, 255);
         glVertex2i(600, 0);
         glVertex2i(0, 0);
-
     glEnd();
 
     // Desenha um quadrado preenchido com a cor corrente
