@@ -220,7 +220,7 @@ int main(void)
 	glutInitWindowPosition (0, 50);
 
 	//Configura a janela
-	glutCreateWindow("Teste do OpenGL");
+	glutCreateWindow("Bandeiras");
 	//Chama a função desenha
 	glutDisplayFunc(desenha);
 	//Inicializa o programa
