@@ -185,16 +185,38 @@ void desenha(void)
         }
     }
 
-
-
     glBegin(GL_QUADS); // africa do sul
-        glColor3ub(0, 0, 0);
+        glColor3ub(255, 255, 255);
         glVertex2i(1005, 5);
         glVertex2i(1495, 5);
         glVertex2i(1495, 320);
         glVertex2i(1005, 320);
+
+        glColor3ub(255, 0, 0);
+        glVertex2f(1495, 320);
+        glVertex2f(1495, 209.75);
+        glVertex2f(1266, 209.75);
+        glVertex2f(1156.9, 320);
+
+        glColor3ub(0, 0, 255);
+        glVertex2f(1495, 5);
+        glVertex2f(1495, 115.25);
+        glVertex2f(1266, 115.25);
+        glVertex2f(1156.9, 5);
     glEnd();
 
+    glBegin(GL_POLYGON);
+        glColor3ub(0, 255, 0);
+        glVertex2f(1005, 150);
+        glVertex2f(1005, 320);
+        glVertex2f(1065, 320);
+        glVertex2f(1260, 195);
+        glVertex2f(1495, 195);
+        glVertex2f(1495, 120);
+        glVertex2f(1260, 120);
+        glVertex2f(1065, 5);
+        glVertex2f(1005, 5);
+    glEnd();
 
 
 	//Habilita a execução de comandos OpenGL
