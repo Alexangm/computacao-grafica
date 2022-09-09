@@ -117,7 +117,6 @@ void keyboard(unsigned char key, int x, int y){
             break;
 
     }
-    printf("espessura = %d\n", espessura);
 }
 
 void specialKeyboard(int key, int x, int y){
