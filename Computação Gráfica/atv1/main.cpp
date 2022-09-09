@@ -102,7 +102,7 @@ void keyboard(unsigned char key, int x, int y){
                 b++;
             break;
         case '+':
-            if (espessura<15)
+            if (espessura<33)
                 espessura++;
             break;
         case '-':
